@@ -20,12 +20,12 @@ class FoiaRequestTest extends EntityKernelTestBase {
    *
    * @var array
    */
-  public static $modules = ['foia_request', 'options', 'field_permissions'];
+  protected static $modules = ['foia_request', 'options', 'field_permissions'];
 
   /**
    * {@inheritdoc}
    */
-  public function setUp() {
+  public function setUp(): void {
     parent::setUp();
 
     $this->installConfig('system');
