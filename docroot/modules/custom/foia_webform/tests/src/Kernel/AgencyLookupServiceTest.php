@@ -27,7 +27,7 @@ class AgencyLookupServiceTest extends KernelTestBase {
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'system',
     'user',
     'webform',
@@ -46,7 +46,7 @@ class AgencyLookupServiceTest extends KernelTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     $this->installConfig(['system', 'taxonomy']);
