@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92e2cef9af7a45a898a8d1e4d92211e2",
+    "content-hash": "cde735132ef5eaa8ec2e7448b0c5efb9",
     "packages": [
         {
             "name": "acquia/blt",
@@ -3573,29 +3573,29 @@
             "extra": {
                 "drupal-scaffold": {
                     "file-mapping": {
-                        "[project-root]/.editorconfig": "assets/scaffold/files/editorconfig",
-                        "[project-root]/.gitattributes": "assets/scaffold/files/gitattributes",
-                        "[web-root]/.csslintrc": "assets/scaffold/files/csslintrc",
-                        "[web-root]/.eslintignore": "assets/scaffold/files/eslintignore",
-                        "[web-root]/.eslintrc.json": "assets/scaffold/files/eslintrc.json",
-                        "[web-root]/.ht.router.php": "assets/scaffold/files/ht.router.php",
                         "[web-root]/.htaccess": "assets/scaffold/files/htaccess",
-                        "[web-root]/example.gitignore": "assets/scaffold/files/example.gitignore",
-                        "[web-root]/index.php": "assets/scaffold/files/index.php",
-                        "[web-root]/INSTALL.txt": "assets/scaffold/files/drupal.INSTALL.txt",
                         "[web-root]/README.md": "assets/scaffold/files/drupal.README.md",
+                        "[web-root]/index.php": "assets/scaffold/files/index.php",
+                        "[web-root]/.csslintrc": "assets/scaffold/files/csslintrc",
                         "[web-root]/robots.txt": "assets/scaffold/files/robots.txt",
                         "[web-root]/update.php": "assets/scaffold/files/update.php",
                         "[web-root]/web.config": "assets/scaffold/files/web.config",
+                        "[web-root]/INSTALL.txt": "assets/scaffold/files/drupal.INSTALL.txt",
+                        "[web-root]/.eslintignore": "assets/scaffold/files/eslintignore",
+                        "[web-root]/.eslintrc.json": "assets/scaffold/files/eslintrc.json",
+                        "[web-root]/.ht.router.php": "assets/scaffold/files/ht.router.php",
                         "[web-root]/sites/README.txt": "assets/scaffold/files/sites.README.txt",
-                        "[web-root]/sites/development.services.yml": "assets/scaffold/files/development.services.yml",
-                        "[web-root]/sites/example.settings.local.php": "assets/scaffold/files/example.settings.local.php",
-                        "[web-root]/sites/example.sites.php": "assets/scaffold/files/example.sites.php",
-                        "[web-root]/sites/default/default.services.yml": "assets/scaffold/files/default.services.yml",
-                        "[web-root]/sites/default/default.settings.php": "assets/scaffold/files/default.settings.php",
+                        "[project-root]/.editorconfig": "assets/scaffold/files/editorconfig",
+                        "[web-root]/example.gitignore": "assets/scaffold/files/example.gitignore",
+                        "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt",
+                        "[project-root]/.gitattributes": "assets/scaffold/files/gitattributes",
                         "[web-root]/modules/README.txt": "assets/scaffold/files/modules.README.txt",
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
-                        "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
+                        "[web-root]/sites/example.sites.php": "assets/scaffold/files/example.sites.php",
+                        "[web-root]/sites/development.services.yml": "assets/scaffold/files/development.services.yml",
+                        "[web-root]/sites/example.settings.local.php": "assets/scaffold/files/example.settings.local.php",
+                        "[web-root]/sites/default/default.services.yml": "assets/scaffold/files/default.services.yml",
+                        "[web-root]/sites/default/default.settings.php": "assets/scaffold/files/default.settings.php"
                     }
                 }
             },
@@ -3994,7 +3994,7 @@
                 "shasum": "8895a8e47199b458013bc153ceafa0b1495f33c1"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10"
+                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
             },
             "type": "drupal-module",
             "extra": {
@@ -6684,11 +6684,6 @@
                     }
                 }
             },
-            "autoload": {
-                "psr-4": {
-                    "Drupal\\Tests\\lightning_media_video\\": "tests/src"
-                }
-            },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
@@ -6703,12 +6698,16 @@
                     "homepage": "https://www.drupal.org/user/223087"
                 },
                 {
-                    "name": "katherined",
-                    "homepage": "https://www.drupal.org/user/109870"
-                },
-                {
                     "name": "phenaproxima",
                     "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
+                    "name": "vipin.mittal18",
+                    "homepage": "https://www.drupal.org/user/319716"
+                },
+                {
+                    "name": "vishalkhode",
+                    "homepage": "https://www.drupal.org/user/2439156"
                 }
             ],
             "description": "Video support for Lightning Media.",
@@ -7603,7 +7602,7 @@
                 "reference": "e2bec41b3afede33e9c5ed27a3a95ef4f0606cf7"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10",
+                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
                 "drupal/ctools": "^3.1 || dev-3.x",
                 "drupal/panels": "^4.4 || dev-4.x"
             },
@@ -8637,7 +8636,7 @@
                 "shasum": "22a44298b98000697efd86a29a8df1c0ce0bf44f"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10",
+                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
                 "drupal/typed_data": "^1.0"
             },
             "type": "drupal-module",
@@ -9179,7 +9178,7 @@
                 "shasum": "b0c71f45ceaa0257bc1583ab4c2a620ff26f9472"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10",
+                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
                 "drupal/externalauth": "^1.1 || ^2.0",
                 "simplesamlphp/simplesamlphp": "^1.19 || ^2.1 || dev-simplesamlphp-2.1"
             },
@@ -9200,7 +9199,7 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
@@ -19707,6 +19706,7 @@
         "drupal/business_rules": 20,
         "drupal/confirm_leave": 10,
         "drupal/dbug": 20,
+        "drupal/drupal-extension": 5,
         "drupal/entity_clone": 10,
         "drupal/feeds": 20,
         "drupal/feeds_ex": 10,
@@ -19722,9 +19722,7 @@
         "drupal/precision_modifier": 10,
         "drupal/rules": 15,
         "drupal/schemata": 10,
-        "drupal/simplesamlphp_auth": 5,
-        "drupal/typed_data": 10,
-        "drupal/drupal-extension": 5
+        "drupal/typed_data": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
@@ -19732,7 +19730,7 @@
         "php": ">=8.1",
         "ext-dom": "*"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.1"
     },
