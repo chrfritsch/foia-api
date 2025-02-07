@@ -7,3 +7,4 @@ chunk: 50
 dependencies:
   config:
     - node.type.quarterly_foia_report_data
+new_content_behavior: 1
