@@ -26,7 +26,7 @@ class FoiaSubmissionQueueWorkerTest extends FoiaSubmissionServiceApiTest {
   /**
    * Test submission service factory.
    *
-   * @var \PHPUnit_Framework_MockObject_MockObject|\Drupal\foia_webform\FoiaSubmissionServiceFactoryInterface
+   * @var \PHPUnit\Framework\MockObject\MockObject|\Drupal\foia_webform\FoiaSubmissionServiceFactoryInterface
    */
   protected $foiaSubmissionServiceFactory;
 
@@ -40,7 +40,7 @@ class FoiaSubmissionQueueWorkerTest extends FoiaSubmissionServiceApiTest {
   /**
    * Sets up parent setup.
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
     $this->installSchema('node', ['node_access']);
     $this->foiaSubmissionsQueue = \Drupal::service('queue')->get('foia_submissions');
