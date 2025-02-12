@@ -19,7 +19,7 @@ class RequestTemplateTest extends KernelTestBase {
    *
    * @var array
    */
-  public static $modules = ['webform_template', 'webform', 'system', 'user'];
+  protected static $modules = ['webform_template', 'webform', 'system', 'user'];
 
   /**
    * Tests webform template.
