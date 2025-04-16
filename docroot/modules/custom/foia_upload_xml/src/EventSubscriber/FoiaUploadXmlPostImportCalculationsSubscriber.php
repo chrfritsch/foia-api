@@ -44,7 +44,7 @@ class FoiaUploadXmlPostImportCalculationsSubscriber implements EventSubscriberIn
   /**
    * {@inheritdoc}
    */
-  public static function getSubscribedEvents() {
+  public static function getSubscribedEvents(): array {
     return [
       MigrateEvents::PRE_ROW_SAVE => ['onBeforeImportStatute'],
     ];
