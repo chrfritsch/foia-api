@@ -2,7 +2,6 @@
 
 namespace Drupal\node_to_docx\EventSubscriber;
 
-use Drupal\Component\Utility\DeprecationHelper;
 use Drupal\Core\Utility\Error;
 use Drupal\Core\Logger\RfcLogLevel;
 use Phpdocx\AutoLoader;
