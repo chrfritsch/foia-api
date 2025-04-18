@@ -2,6 +2,7 @@
 
 namespace Drupal\node_to_docx\EventSubscriber;
 
+use Drupal\Core\Utility\Error;
 use Drupal\Core\Logger\RfcLogLevel;
 use Phpdocx\AutoLoader;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
@@ -22,7 +23,7 @@ class AutoloaderSubscriber implements EventSubscriberInterface {
   /**
    * Implements \Symfony\Component\EventDispatcher\EventSubscriberInterface::getSubscribedEvents().
    */
-  public static function getSubscribedEvents() {
+  public static function getSubscribedEvents(): array {
     return [
       // Run very early but after composer_manager which has a priority of 999.
       KernelEvents::REQUEST => ['onRequest', 990],
@@ -38,7 +39,7 @@ class AutoloaderSubscriber implements EventSubscriberInterface {
     }
     catch (\RuntimeException $e) {
       if (PHP_SAPI !== 'cli') {
-        watchdog_exception('node_to_docx', $e, NULL, [], RfcLogLevel::WARNING);
+        Error::logException(\Drupal::logger('node_to_docx'), $e, NULL, [], RfcLogLevel::WARNING);
       }
     }
   }
