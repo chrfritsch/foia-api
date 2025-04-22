@@ -55,7 +55,7 @@ class WebformNormalizerTest extends BrowserTestBase {
       if ($webformElement['#type'] === 'select' && !is_array($webformElement['#options'])) {
         $expectedElementOptions = WebformOptions::getElementOptions($webformElement);
         $elementOptionsFromJsonApi = $webformFromJsonApi['data']['attributes']['elements'][$elementName]['#options'];
-        $this->assertEquals($expectedElementOptions, $elementOptionsFromJsonApi, "\$canonicalize = true", $delta = 0.0, $maxDepth = 10, $canonicalize = TRUE);
+        $this->assertEquals($expectedElementOptions, $elementOptionsFromJsonApi, "\$canonicalize = true", $delta = 0.0, $maxDepth = 10);
       }
     }
 
