@@ -65,7 +65,7 @@ class FoiaSubmissionQueueHandlerTest extends KernelTestBase {
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'webform_template',
     'webform',
     'system',
@@ -85,7 +85,7 @@ class FoiaSubmissionQueueHandlerTest extends KernelTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
     $this->installSchema('webform', ['webform']);
     $this->installConfig(['webform', 'webform_template', 'foia_webform']);
