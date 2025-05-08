@@ -1,7 +1,5 @@
 _core:
   default_config_hash: n5mlpvT_JvAQDFdotgikrUvdzuhlUIjltA4S04wVZAY
-text_formats:
-  - rich_text
 absolute: false
 file_field_images_enabled: false
 widgets:
@@ -17,3 +15,5 @@ file_extensions:
     - mp3
   video:
     - mp4
+text_formats:
+  - rich_text
