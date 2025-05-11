@@ -81,7 +81,7 @@ class FoiaSubmissionServiceApiTest extends KernelTestBase {
   /**
    * Logger service.
    *
-   * @var \Psr\Log\LoggerInterface|\PHPUnit_Framework_MockObject_MockObject
+   * @var \Psr\Log\LoggerInterface|\PHPUnit\Framework\MockObject\MockObject
    */
   protected $logger;
 
@@ -105,7 +105,7 @@ class FoiaSubmissionServiceApiTest extends KernelTestBase {
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'webform_template',
     'webform',
     'system',
@@ -129,7 +129,7 @@ class FoiaSubmissionServiceApiTest extends KernelTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
     $this->installSchema('webform', ['webform']);
     $this->installConfig(['webform', 'webform_template', 'foia_webform']);
