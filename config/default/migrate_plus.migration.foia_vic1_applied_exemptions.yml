@@ -210,6 +210,8 @@ process:
       plugin: default_value
       default_value: 0
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_vic1_applied_exemptions
+include: null

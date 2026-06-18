@@ -86,6 +86,8 @@ process:
   field_total_costs: field_total_costs
   field_total_staff: field_total_staff
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_ix_personnel
+include: null

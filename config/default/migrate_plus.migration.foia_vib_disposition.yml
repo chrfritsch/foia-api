@@ -81,6 +81,8 @@ process:
   field_closed_oth_app: field_closed_oth_app
   field_total: field_total
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_vib_disposition
+include: null

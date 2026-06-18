@@ -76,6 +76,8 @@ process:
   field_pend_start_yr: field_pend_start_yr
   field_proc_start_yr: field_proc_start_yr
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_xiib
+include: null

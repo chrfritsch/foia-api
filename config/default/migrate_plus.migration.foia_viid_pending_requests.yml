@@ -137,6 +137,8 @@ process:
       default_value: N/A
   field_exp_pend: field_exp_pend
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_viid_pending_requests
+include: null

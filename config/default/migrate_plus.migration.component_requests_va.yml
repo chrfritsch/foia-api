@@ -66,6 +66,8 @@ process:
       message: 'Cannot find an Component node with the given abbreviation.'
 destination:
   plugin: 'entity:node'
+idMap: {  }
 migration_dependencies:
   required:
     - component
+include: null

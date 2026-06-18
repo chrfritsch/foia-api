@@ -14,4 +14,6 @@ source:
   item_selector: '/iepd:FoiaAnnualReport/foia:InformationGrantedResponseTimeSection/foia:ProcessedResponseTimeOrganizationAssociation'
 process: null
 destination: null
+idMap: {  }
 migration_dependencies: null
+include: null

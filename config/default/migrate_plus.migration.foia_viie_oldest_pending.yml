@@ -276,6 +276,8 @@ process:
       plugin: default_value
       default_value: N/A
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_viie_oldest_pending
+include: null

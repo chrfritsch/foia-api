@@ -91,6 +91,8 @@ process:
   field_req_pend_end_yr: field_req_pend_end_yr
 destination:
   plugin: 'entity_reference_revisions:paragraph'
+idMap: {  }
 migration_dependencies:
   required:
     - component_requests_va
+include: null

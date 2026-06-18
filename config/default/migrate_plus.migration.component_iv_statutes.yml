@@ -14,4 +14,6 @@ source:
   item_selector: '/iepd:FoiaAnnualReport/foia:Exemption3StatuteSection/foia:ReliedUponStatuteOrganizationAssociation'
 process: null
 destination: null
+idMap: {  }
 migration_dependencies: null
+include: null

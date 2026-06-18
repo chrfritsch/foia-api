@@ -76,6 +76,8 @@ process:
   field_req_processed_yr: field_req_processed_yr
   field_req_pend_end_yr: field_req_pend_end_yr
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_va_requests
+include: null

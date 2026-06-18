@@ -76,6 +76,8 @@ process:
   field_received_cur_yr: field_received_cur_yr
   field_received_last_yr: field_received_last_yr
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_xiie1
+include: null

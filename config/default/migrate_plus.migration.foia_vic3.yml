@@ -96,7 +96,9 @@ process:
             - '1'
   field_total: field_total
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_vic3_other_denial
     - foia_vic3_other
+include: null
