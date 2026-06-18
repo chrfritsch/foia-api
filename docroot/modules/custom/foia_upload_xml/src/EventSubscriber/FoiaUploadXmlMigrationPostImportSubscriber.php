@@ -154,7 +154,7 @@ class FoiaUploadXmlMigrationPostImportSubscriber implements EventSubscriberInter
       $id_map->saveIdMapping($row, [], MigrateIdMapInterface::STATUS_FAILED);
       $result = Error::decodeException($e);
       $message = $result['@message'] . ' (' . $result['%file'] . ':' . $result['%line'] . ')';
-      (new MigrateMessage)->display($message, 'error');
+      (new MigrateMessage())->display($message, 'error');
     }
   }
 
