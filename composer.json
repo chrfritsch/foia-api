@@ -160,13 +160,18 @@
             ]
         },
         "patches": {
+            "drupal/autologout": {
+                "Avoid problematic interactions with the confirm_leave module": "./patches/autologout-support-for-confirm_leave.patch"
+            },
             "drupal/core": {
-                "FOIA-32: Dynamically provide action plugins for every moderation state change": "https://www.drupal.org/files/issues/2019-11-20/2797583_provide_moderation_states_as_actions_128.patch",
                 "FOIA-32: Exclude Agency/Component from validation for bulk publishing": "./patches/FOIA-32-validator.patch",
-                "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2024-07-16/2869592-disabled-update-module-71.patch",
-                "2230909 - Simple decimals fail to pass validation": "https://www.drupal.org/files/issues/2026-03-30/2230909-simple-decimals-fail-validation-11.3.x-hacky-disable-validation-MR152288.patch",
                 "Hacks related to file_entity to get XML upload to work": "./patches/managed-file-hacks-for-xml-upload.patch",
+                "Issue #2230909: [Simple decimals fail to pass validation](https://www.drupal.org/project/drupal/issues/2230909)": "https://www.drupal.org/files/issues/2026-03-30/2230909-simple-decimals-fail-validation-11.3.x-hacky-disable-validation-MR152288.patch",
+                "Issue #2797583: [Dynamically provide action plugins for every moderation state change](https://www.drupal.org/project/drupal/issues/2797583)": "https://www.drupal.org/files/issues/2019-11-20/2797583_provide_moderation_states_as_actions_128.patch",
                 "More hacks related to action module to get XML upload to work": "./patches/migrate-action-hack-for-xml-upload.patch"
+            },
+            "drupal/maillog": {
+                "Fix Maillog": "https://www.drupal.org/files/issues/2023-01-12/maillog_3259616-15.patch"
             },
             "drupal/paragraphs": {
                 "Inline Paragraphs widget performance update": "./patches/paragraphs-improve-performance-2935134.patch",
@@ -174,18 +179,6 @@
             },
             "drupal/simplesamlphp_auth": {
                 "Masquerade and Logout Fix": "./patches/FOIA-78964-simplesamlphp-logout.patch"
-            },
-            "drupal/ckeditor5": {
-                "Drupal 10: Install Error: https://www.drupal.org/project/ckeditor5_font/issues/3318041": "https://www.drupal.org/files/issues/2022-12-16/2-fix-empty-form-value-validation.patch"
-            },
-            "drupal/views": {
-                "Drupal 10: TEMP VIEWS: https://www.drupal.org/project/drupal/issues/3150368": "https://www.drupal.org/files/issues/2020-06-09/EntityViewsData_MapDefinition_Null-3150368-1.patch"
-            },
-            "drupal/maillog": {
-                "Fix Maillog": "https://www.drupal.org/files/issues/2023-01-12/maillog_3259616-15.patch"
-            },
-            "drupal/autologout": {
-              "Avoid problematic interactions with the confirm_leave module": "./patches/autologout-support-for-confirm_leave.patch"
             }
         },
         "installer-types": [
@@ -243,19 +236,7 @@
     },
     "config": {
         "sort-packages": true,
-        "allow-plugins": {
-            "composer/installers": true,
-            "cweagans/composer-patches": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true,
-            "drupal/core-vendor-hardening": true,
-            "mglaman/composer-drupal-lenient": true,
-            "oomphinc/composer-installers-extender": true,
-            "phpstan/extension-installer": true,
-            "simplesamlphp/composer-module-installer": true,
-            "simplesamlphp/composer-xmlprovider-installer": true
-        },
+        "allow-plugins": true,
         "platform": {
             "php": "8.3.24"
         },
