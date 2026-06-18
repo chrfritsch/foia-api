@@ -199,6 +199,8 @@ process:
       plugin: default_value
       default_value: 0
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_vb1_requests
+include: null

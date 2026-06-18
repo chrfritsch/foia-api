@@ -81,6 +81,8 @@ process:
   field_app_pend_end_yr: field_app_pend_end_yr
   field_footnotes_via: field_footnotes_via
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_via_disposition
+include: null

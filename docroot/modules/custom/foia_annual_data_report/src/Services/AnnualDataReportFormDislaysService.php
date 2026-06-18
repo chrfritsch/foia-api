@@ -74,7 +74,6 @@ class AnnualDataReportFormDislaysService {
       // Initialize for nav html.
       $form_nav = '';
 
-
       // Close "button" for the form section nav.
       $form_nav .= '<div id="form-section-nav-close">X</div>';
 

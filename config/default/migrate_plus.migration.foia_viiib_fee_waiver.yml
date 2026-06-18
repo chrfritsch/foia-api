@@ -88,6 +88,8 @@ process:
   field_num_denied: field_num_denied
   field_num_grant: field_num_grant
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_viiib_fee_waiver
+include: null

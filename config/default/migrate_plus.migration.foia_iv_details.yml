@@ -67,6 +67,8 @@ process:
       message: 'Cannot find an Agency Component node with the given abbreviation.'
   field_num_relied_by_agency_comp: field_num_relied_by_agency_comp
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component
+include: null

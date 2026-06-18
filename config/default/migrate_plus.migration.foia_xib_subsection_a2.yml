@@ -66,6 +66,8 @@ process:
   field_rec_post_prog: field_rec_post_prog
   field_rec_post_foia: field_rec_post_foia
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_xib_subsection_a2
+include: null

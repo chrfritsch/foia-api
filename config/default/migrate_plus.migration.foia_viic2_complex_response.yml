@@ -126,6 +126,8 @@ process:
   field_400_up_days: field_400_up_days
   field_total: field_total
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_viic2_complex_response
+include: null

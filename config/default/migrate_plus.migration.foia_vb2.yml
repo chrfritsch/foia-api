@@ -96,7 +96,9 @@ process:
             - '1'
   field_total: field_total
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_vb2_requests
     - foia_vb2_other
+include: null

@@ -639,8 +639,8 @@ display:
               agency_administrator: '0'
               agency_manager: '0'
               non_sso: '0'
-            argument: ''
             reduce: false
+            argument: ''
           is_grouped: false
           group_info:
             label: ''
@@ -2000,8 +2000,8 @@ display:
               agency_administrator: '0'
               agency_manager: '0'
               non_sso: '0'
-            argument: ''
             reduce: false
+            argument: ''
           is_grouped: false
           group_info:
             label: ''

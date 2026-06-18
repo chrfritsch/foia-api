@@ -66,6 +66,8 @@ process:
   field_total_fees: field_total_fees
   field_perc_costs: field_perc_costs
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_x_fees
+include: null

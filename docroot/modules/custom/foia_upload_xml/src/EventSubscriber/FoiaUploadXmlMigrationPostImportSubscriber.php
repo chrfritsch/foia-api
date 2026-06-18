@@ -58,7 +58,7 @@ class FoiaUploadXmlMigrationPostImportSubscriber implements EventSubscriberInter
   /**
    * {@inheritdoc}
    */
-  public static function getSubscribedEvents() {
+  public static function getSubscribedEvents(): array {
     return [
       MigrateEvents::POST_IMPORT => ['onPostAgencyImport'],
     ];
@@ -154,7 +154,7 @@ class FoiaUploadXmlMigrationPostImportSubscriber implements EventSubscriberInter
       $id_map->saveIdMapping($row, [], MigrateIdMapInterface::STATUS_FAILED);
       $result = Error::decodeException($e);
       $message = $result['@message'] . ' (' . $result['%file'] . ':' . $result['%line'] . ')';
-      (new MigrateMessage)->display($message, 'error');
+      (new MigrateMessage())->display($message, 'error');
     }
   }
 

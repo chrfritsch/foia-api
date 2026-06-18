@@ -66,6 +66,8 @@ process:
   field_back_prev_yr: field_back_prev_yr
   field_back_cur_yr: field_back_cur_yr
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - component_xiie2
+include: null

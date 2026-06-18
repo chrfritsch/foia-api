@@ -20,4 +20,6 @@ process:
 destination:
   plugin: 'entity_reference_revisions:paragraph'
   default_bundle: quarterly_component_data
+idMap: {  }
 migration_dependencies: null
+include: null

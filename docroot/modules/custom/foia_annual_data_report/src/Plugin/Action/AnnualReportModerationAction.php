@@ -6,7 +6,8 @@ namespace Drupal\foia_annual_data_report\Plugin\Action;
  * @file
  * Contains \Drupal\foia_annual_data_report\Plugin\Action\AnnualReportModerationAction.
  */
-
+use Drupal\Component\Utility\DeprecationHelper;
+use Drupal\Core\Utility\Error;
 use Drupal\content_moderation\ModerationInformationInterface;
 use Drupal\content_moderation\StateTransitionValidationInterface;
 use Drupal\Core\Action\ActionBase;
@@ -211,7 +212,7 @@ class AnnualReportModerationAction extends ActionBase implements ContainerFactor
       }
     }
     catch (\Exception $e) {
-      watchdog_exception('VBO Quartly report moderation', $e);
+      Error::logException(\Drupal::logger('VBO Quartly report moderation'), $e);
     }
   }
 

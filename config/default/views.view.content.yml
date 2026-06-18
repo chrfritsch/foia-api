@@ -971,8 +971,8 @@ display:
               cfo_council_reviewer: '0'
               cfo_page_creator: '0'
               cfo_page_reviewer: '0'
-            argument: ''
             reduce: false
+            argument: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1342,10 +1342,10 @@ display:
       automatic_download: true
       export_method: batch
       export_batch_size: 1000
+      export_filesystem: private
       custom_redirect_path: false
       redirect_to_display: page_2
       include_query_params: false
-      export_filesystem: private
     cache_metadata:
       max-age: -1
       contexts:
@@ -2533,8 +2533,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-            argument: null
             reduce: false
+            argument: null
           is_grouped: false
           group_info:
             label: ''

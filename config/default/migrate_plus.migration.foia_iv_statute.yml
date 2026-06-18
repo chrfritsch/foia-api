@@ -105,6 +105,8 @@ process:
   field_statute: field_statute
   field_type_of_info_withheld: field_type_of_info_withheld
 destination: null
+idMap: {  }
 migration_dependencies:
   required:
     - foia_iv_details
+include: null
